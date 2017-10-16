@@ -36,6 +36,44 @@
                       );
                       }
                       });
+          var CommentApp=React.createClass({
+          getInitiaState: function(){
+             return{
+                comments:[],
+                inputValue:''
+                }
+                },
+                
+            handleSubmit; function(e){
+            e.preventDefault(9;
+            var comments: this.statecomments.concat(comment),
+            inputValue
+            })
+            },
+            handleChange:fanction(e){
+              this.setState({
+                inputValue:e.target.value
+                });
+                },
+                render:function(){
+                return (
+                <div>
+                <form
+                       className="comment-form"
+                        onSubmit={this.handleSubmit}>
+                        <input
+                             type="text"
+                             value={this.state.inputValue}
+                             onChange={this.handleChange}/>
+                             <input type="submit" value="add"/>
+                             </form>
+                         <CommentList comments={this.state.comments}/>
+                         </div>
+                         );
+                         }
+                    });
+                    ReactDOM.render()
+                             
        
       
       
